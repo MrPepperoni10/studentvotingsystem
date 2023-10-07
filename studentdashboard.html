@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Richwell Student Dashboard</title>
+	<link rel="stylesheet" href="dashboardstyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+<div class="sidebar">
+	<h1 class="logo"> <img src="images/ricwhelllogo.png" class="richwelllogoheader"></h1>
+	<i class="fa fa-chevron-left menu-icon"></i>
+	<ul class="sidenav">
+		<li class="active"><i class="fa fa-chart-line"></i><a href="#">Student Dashboard</a>
+	</li>
+	<li><i class="fa fa-user"></i><a href="#">Student Profile</a></li>
+    <li><i class="fa-solid fa-user-pen"></i><a href="#">Edit Profile</a></li>
+	<li><i class="fa fa-lock"></i><a href="#">Change Password</a></li>
+    <li><i class="fa-solid fa-bell"></i><a href="#">Notification</a></li>
+	<li><i class="fa fa-file-text"></i><a href="#">Voting History</a></li>
+	<li><i class="fa fa-shield"></i><a href="#">Permission</a></li>
+	<li><i class="fa-solid fa-tv"></i><a href="#">Tutorial</a></li>
+	<li><i class="fa fa-users"></i><a href="#">About us</a></li>
+    <li><i class="fa-solid fa-right-to-bracket"></i><a href="#">Log out</a></li>
+
+	</ul>
+</div>
+
+<div class="main">
+	<div class="middle-box">
+		<div class="main-top">
+			<input type="text" class="input" placeholder="Search">
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="box-1">
+			<div class="box-2">
+				<div class="content">
+					<i class="fa fa-user icons"></i>
+					<p>Classroom Officer Election</p>
+				</div>
+			</div>
+
+			<div class="box-2">
+				<div class="content">
+					<i class="fa fa-user icons"></i>
+					<p>Student Council Election</p>
+				</div>
+			</div>
+
+			<div class="box-2">
+				<div class="content">
+					<i class="fa fa-user icons"></i>
+					<p>Student Government Election</p>
+				</div>
+			</div>
+
+			<div class="box-2">
+				<div class="content">
+					<i class="fa fa-briefcase icons"></i>
+					<p>Your Votes</p>
+				</div>
+			</div>
+
+			<div class="box-2">
+				<div class="content">
+					<i class="fa fa-eye icons"></i>
+					<p>Election Votes Tracker</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+        <div class="sidebox">
+            <div class="t-sale">
+                <div class="content-box-1">
+                    <br/>
+                    <p><img src="images/ricwhelllogo.png" class="head-1"></p>
+                    <div class="right-sidebar">
+                        <p class="p-sidebar">RICHWELL COLLEGES INC</p>
+                        <p class="p-sidebar"> Online Voting System</p>
+	</div>
+</div>
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/chart.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".span1").click(function(){
+			$(".dropdown").slideToggle(500);
+		});
+	});
+	$('.sidenav li').click(function(){
+		$('.sidenav li').removeClass("active");
+		$(this).addClass("active");
+	})
+</script>
+
+<script type="text/javascript">
+	$(".menu-icon").click(function(e) {
+        e.preventDefault();
+        $(".menu-icon").toggleClass("menuicon");
+        $(".main").toggleClass("main-width");
+        $(".sidebar").toggleClass("active1");
+        $(".sidenav li a").toggleClass("anchor");
+        $(".sidenav li").toggleClass("lislide");
+        $(".sidenav p").toggleClass("apphide");
+        $(".logo span").toggleClass("headspan");
+        $(".logo").toggleClass("lm");
+
+});
+</script>
